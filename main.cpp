@@ -35,8 +35,8 @@ int main() {
   for(int i = 0;i < size;i++){
    stdDev = Array[i]*Array[i] + stdDev;
   }
-  stdDev = sqrt(stdDev - mean*mean);
-  stdDev = stdDev/size;
+  stdDev = (stdDev - mean*mean);
+  stdDev = sqrt(stdDev/size);
   cout << "Standard Deviation: " << stdDev << endl;
 
   // Deletes a memory allocated to dynamic array
